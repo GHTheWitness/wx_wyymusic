@@ -1,0 +1,66 @@
+.banners {
+  width: 100%;
+  height: 300rpx;
+}
+.banners image {
+  width: 100%;
+  height: 100%;
+}
+.navContainer {
+  display: flex;
+}
+.navContainer .navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.navItem .iconfont {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background: #f01313;
+  color: #fff;
+  font-size: 50rpx;
+  margin: 20rpx 0;
+}
+.navItem text {
+  font-size: 26rpx;
+}
+.recommendContainer {
+  padding: 20rpx;
+}
+.recommendContainer .more {
+  float: right;
+  border: 1rpx solid #333;
+  font-size: 26rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+}
+.recommendContainer .title {
+  font-size: 32rpx;
+  line-height: 40rpx;
+  color: #666;
+}
+.recommendScroll {
+  display: flex;
+}
+.recommendScroll .scrollItem {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.recommendScroll .scrollItem image {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 10rpx;
+}
+.recommendScroll .scrollItem text {
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
