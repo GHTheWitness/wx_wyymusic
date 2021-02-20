@@ -1,0 +1,98 @@
+.videoContainer .header {
+  display: flex;
+  padding: 10rpx;
+}
+.videoContainer .header image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.videoContainer .header .search {
+  border: 1rpx solid #eee;
+  flex: 1;
+  margin: 0 20rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #d43c33;
+}
+.videoContainer .header .search input {
+  height: 100%;
+}
+.videoContainer .navScroll {
+  display: flex;
+  white-space: nowrap;
+  height: 70rpx;
+}
+.videoContainer .navScroll .navItem {
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  box-sizing: border-box;
+}
+.videoContainer .navScroll .navItem .navContent {
+  height: 70rpx;
+  box-sizing: border-box;
+}
+.videoContainer .navScroll .active {
+  border-bottom: 1rpx solid #d43c33;
+  border-width: 5rpx;
+}
+.videoScroll {
+  margin-top: 10rpx;
+  height: calc(100vh - 162rpx);
+}
+.videoScroll .videoItem {
+  padding: 0 3%;
+  border-bottom: 1rpx solid #eee;
+}
+.videoScroll .videoItem .common {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+.videoItem .content {
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* footer */
+.userDesc {
+  padding: 20rpx 0;
+}
+.userDesc .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.userDesc .nickName {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.userDesc .comments_praised {
+  float: right;
+}
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.comments_praised .btn:after {
+  border: none;
+}
+.comments_praised .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}

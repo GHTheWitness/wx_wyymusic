@@ -1,0 +1,128 @@
+.songDetailContainer {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.songDetailContainer .author {
+  display: flex;
+  margin: 20rpx;
+}
+.songDetailContainer .author .author-item::after {
+  margin: 0 10rpx;
+  content: "/";
+}
+.songDetailContainer .author .author-item:last-child::after {
+  content: "";
+}
+.songDetailContainer .circle {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background: #fff;
+  margin: 10rpx 0;
+  z-index: 100;
+}
+.songDetailContainer .needle {
+  position: relative;
+  left: 60rpx;
+  width: 192rpx;
+  height: 274rpx;
+  top: -40rpx;
+  z-index: 99;
+  transform-origin: 40rpx 0;
+  transform: rotate(-20deg);
+  transition: transform 1s;
+}
+.songDetailContainer .needleRotate {
+  transform: rotate(0deg);
+}
+.songDetailContainer .discContainer {
+  position: relative;
+  top: -170rpx;
+  width: 598rpx;
+  height: 598rpx;
+}
+.songDetailContainer .discContainer .disc {
+  width: 100%;
+  height: 100%;
+}
+.songDetailContainer .discContainer .music-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+@keyframes disc {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.discAnimation {
+  animation: disc 4s linear infinite;
+  animation-delay: 1s;
+}
+.musicControl {
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  border-top: 1rpx solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  display: flex;
+  padding-top: 30rpx;
+}
+.musicControl .icon-bofang1 {
+  font-size: 100rpx;
+}
+.musicControl text {
+  width: 20%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 50rpx;
+}
+.musicControl .big {
+  font-size: 80rpx;
+}
+.progressControl {
+  position: absolute;
+  bottom: 200rpx;
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+.progressControl .barControl {
+  width: 450rpx;
+  height: 4rpx;
+  background: rgba(0, 0, 0, 0.4);
+  margin: auto;
+  position: relative;
+}
+.progressControl .barControl .audio-currentTime-Bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rpx;
+  background: red;
+  z-index: 1;
+}
+.progressControl .barControl .audio-currentTime-Bar .audio-circle {
+  position: absolute;
+  right: -12rpx;
+  top: -4rpx;
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #fff;
+}

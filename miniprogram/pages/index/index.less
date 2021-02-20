@@ -35,23 +35,13 @@
 }
 
 .recommendContainer{
-  padding: 20rpx;
-  .more{
-    float: right;
-    border: 1rpx solid #333;
-    font-size: 26rpx;
-    padding: 10rpx 20rpx;
-    border-radius: 30rpx;
-  }
-  .title{
-    font-size: 32rpx;
-    line-height: 40rpx;
-    color: #666;
-  }
+  padding: 30rpx 20rpx 20rpx 20rpx;
 }
 
+// 推荐滚动
 .recommendScroll{
   display: flex;
+  height: 300rpx;
   .scrollItem{
     width: 200rpx;
     margin-right: 20rpx;
@@ -72,3 +62,44 @@
     }
   }
 }
+
+// 排行榜
+.topList{
+  padding: 20rpx 0;
+  .topSwiper{
+    height: 450rpx;
+  }
+  .swiperItem{
+    width: 96%;
+    background: #fbfbfb;
+    .title{
+      font-size: 30rpx;
+      line-height: 80rpx;
+    }
+    .musicItem{
+      display: flex;
+      margin-top: 20rpx;
+      image{
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 6rpx;
+      }
+      .count{
+        // display: inline-block;
+        width: 100rpx;
+        height: 100rpx;
+        text-align: center;
+        line-height: 100rpx;
+      }
+      .musicName{
+        line-height: 100rpx;
+        height: 100rpx;
+        max-width: 400rpx;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}
+

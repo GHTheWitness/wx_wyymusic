@@ -1,0 +1,78 @@
+.recommendSongContainer .header {
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+.recommendSongContainer .header image {
+  width: 100%;
+  height: 100%;
+}
+.recommendSongContainer .header .date {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150rpx;
+  margin-top: -50rpx;
+  width: 300rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  font-weight: 600;
+}
+.recommendSongContainer .header .date .day {
+  font-size: 38rpx;
+}
+.ListContainer {
+  position: relative;
+  top: -20rpx;
+  padding: 20rpx;
+  border-radius: 30rpx;
+  background: #fff;
+}
+.ListContainer .listHeader {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.ListContainer .listHeader .changeMore {
+  float: right;
+}
+.ListContainer .listScroll {
+  height: calc(100vh - 420rpx);
+}
+.ListContainer .listScroll .ScrollItem {
+  display: flex;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.ListContainer .listScroll .ScrollItem image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+}
+.ListContainer .listScroll .ScrollItem .musicInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  max-width: 500rpx;
+}
+.ListContainer .listScroll .ScrollItem .musicInfo text {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ListContainer .listScroll .ScrollItem .musicInfo .author-list text::after {
+  margin: 0 8rpx;
+  content: "/";
+}
+.ListContainer .listScroll .ScrollItem .iconfont {
+  position: absolute;
+  right: 0;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+}
